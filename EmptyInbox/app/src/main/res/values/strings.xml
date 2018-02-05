@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">EmptyInbox</string>
+    <string name="title_activity_login">Login</string>
+    <string name="login">Login</string>
+    <string name="sign_up_text">Sign Up!</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_up_error_message">Make sure you entered a email  address and password!</string>
+    <string name="sign_up_error_title">Opps!</string>
+    <string name="firebase_authentication_error">Authentication failed.</string>
+    <string name="firebase_signup_error">Signup failed.</string>
+    <string name="login_error_message">Make sure you entered correct email  address and password!</string>
+    <string name="login_error_title">Opps!</string>
+</resources>

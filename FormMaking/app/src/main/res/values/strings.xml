@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Registration Form</string>
+    <string name="reg">Registration</string>
+    <string name="txt1">Username</string>
+    <string name="uname">Uasername</string>
+    <string name="txt2">Email Id</string>
+    <string name="email">Email</string>
+    <string name="txt3">Password</string>
+    <string name="password">Password</string>
+    <string name="ck1">Female</string>
+    <string name="ck2">Male</string>
+    <string name="ck3">Other</string>
+    <string name="btn">Submit</string>
+    <string name="date1">Date</string>
+    <string name="btnDate">Date</string>
+    <string name="time1">Time</string>
+    <string name="btnTime">Time</string>
+</resources>

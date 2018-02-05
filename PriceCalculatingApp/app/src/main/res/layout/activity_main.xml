@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dnerd.dipty.pricecalculatingapp.MainActivity">
+
+
+    <CheckBox
+        android:id="@+id/checkBoxBurger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/burger"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/checkBoxPizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBoxBurger"
+        android:layout_alignStart="@+id/checkBoxBurger"
+        android:layout_below="@+id/checkBoxBurger"
+        android:layout_marginTop="43dp"
+        android:text="@string/pizza"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/checkBoxCoffee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBoxPizza"
+        android:layout_alignStart="@+id/checkBoxPizza"
+        android:layout_below="@+id/checkBoxPizza"
+        android:layout_marginTop="34dp"
+        android:text="@string/coffee"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinnerBurger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="65dp"
+        android:layout_marginStart="65dp"
+        android:layout_alignBottom="@+id/checkBoxBurger"
+        android:layout_toRightOf="@+id/checkBoxBurger"
+        android:layout_toEndOf="@+id/checkBoxBurger" />
+
+    <Spinner
+        android:id="@+id/spinnerPizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkBoxCoffee"
+        android:layout_alignLeft="@+id/spinnerBurger"
+        android:layout_alignStart="@+id/spinnerBurger" />
+
+    <Spinner
+        android:id="@+id/spinnerCoffee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/checkBoxCoffee"
+        android:layout_alignLeft="@+id/spinnerPizza"
+        android:layout_alignStart="@+id/spinnerPizza" />
+
+    <TextView
+        android:id="@+id/burgePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/spinnerBurger"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:text="@string/burger_price"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pizzaPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/burgePrice"
+        android:layout_alignStart="@+id/burgePrice"
+        android:layout_alignTop="@+id/spinnerPizza"
+        android:text="@string/pizza_price"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/coffeePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/pizzaPrice"
+        android:layout_alignRight="@+id/pizzaPrice"
+        android:layout_alignTop="@+id/spinnerCoffee"
+        android:text="@string/coffee_price"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/totalPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="127dp"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/coffeePrice"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp"
+        android:text="@string/order"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+</RelativeLayout>

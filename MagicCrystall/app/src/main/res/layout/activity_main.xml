@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation = "portrait"
+    tools:context="com.dnerd.dipty.crystalBall.MainActivity"
+    android:background="@android:color/black">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ball01"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" >
+
+
+    <view
+            class="android.support.v4.widget.Space"
+            id="@+id/view1"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:gravity="center_horizontal"
+            android:shadowColor="@android:color/white"
+            android:shadowRadius="10"
+            android:textColor="@android:color/white"
+            android:textSize="32sp" />
+
+        <view
+            class="android.support.v4.widget.Space"
+            android:id="@+id/view2"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+    </LinearLayout>
+
+</RelativeLayout>

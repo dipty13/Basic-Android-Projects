@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PriceCalculatingApp</string>
+    <string name="pizza">Pizza</string>
+    <string name="coffee">Coffee</string>
+    <string name="burger">Burger</string>
+    <string name="order">Order</string>
+    <string name="burger_price">150</string>
+    <string name="pizza_price">700</string>
+    <string name="coffee_price">100</string>
+</resources>

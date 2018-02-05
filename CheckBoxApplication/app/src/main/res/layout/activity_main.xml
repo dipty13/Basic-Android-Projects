@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dnerd.dipty.checkboxapplication.MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="My Cafe Zone"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="28dp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/checkBoxPizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="23dp"
+        android:text="Pizza"
+        android:textSize="25dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxBurger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:text="Burger"
+        android:textSize="25dp"
+        android:layout_below="@+id/checkBoxPizza"
+        android:layout_alignLeft="@+id/checkBoxPizza"
+        android:layout_alignStart="@+id/checkBoxPizza" />
+
+    <CheckBox
+        android:id="@+id/checkBoxCoffee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/checkBoxBurger"
+        android:layout_alignRight="@+id/checkBoxBurger"
+        android:layout_below="@+id/checkBoxBurger"
+        android:layout_marginTop="57dp"
+        android:text="Coffee"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/buttonOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBoxCoffee"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:text="Order"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+</RelativeLayout>
